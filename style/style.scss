@@ -1,0 +1,31 @@
+.text{
+    height: 100px ;
+    width: 600px;
+}
+
+.paragraf{
+    height: 100px ;
+    width: 600px;
+    margin-top: 10px;
+}
+
+.more{
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.btn{
+    padding: 15px;
+    background-color: rgb(14, 93, 93);
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
