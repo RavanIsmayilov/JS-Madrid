@@ -1,31 +1,157 @@
-.text{
-    height: 100px ;
-    width: 600px;
-}
+// body {
+//     height: 100vh;
+//     display: grid;
+//     place-items: center;
+//     margin: 0px;
+//   }
+//   *{
+//     box-sizing: border-box;
+  
+//   }
+  
+//   .slider {
+//     width: 100%;
+//     max-width: 800px;
+//     height: 350px;
+//     position: relative;
+//     overflow: hidden;
+//     border-radius: 15px;
+//     display: flex;
+//     text-align: center;
+//   }
+  
+//   .slide {
+//     width: 100%;
+//     max-width: 800px;
+//     height: 350px;
+//     position: absolute;
+//     transition: all 0.5s;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+  
+//   .slide img {
+//     height: 100%;
+//     object-fit: cover;
+//     width: 250px;
+  
+//     border-radius: 15px;
+    
+//   }
+  
+//   .btn {
+//     position: absolute;
+//     width: 40px;
+//     height: 40px;
+//     padding: 10px;
+//     border: none;
+//     border-radius: 50%;
+//     z-index: 10px;
+//     cursor: pointer;
+//     background-color: #fff;
+//     font-size: 18px;
+//   }
+  
+//   .btn:active {
+//     transform: scale(1.1);
+//   }
+  
+//   .btn-prev {
+//     top: 48%;
+//     left: 25%;
+//   }
+  
+//   .btn-next {
+//     top: 48%;
+//     right: 25%;
+//   }
 
-.paragraf{
-    height: 100px ;
-    width: 600px;
-    margin-top: 10px;
-}
+//   .btn{
+//     padding: 12px;
+//     width: 100px;
+//     background-color: #000;
+//     color: #fff;
+//     border-radius: 8px;
+//     cursor: pointer;
+//     text-align: center;
+//   }
 
-.more{
-    display: none;
-}
+//   .text{
+//     font-size: 32px;
+//     margin-top: 80px;
+//   }
 
-.content{
+//   .container{
+//     width: 500px;
+//     height: 500px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//   }
+
+//------------------------------------------------------------------------------------------------------
+
+// .section{
+//     height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .btn{
+//     width: 100px;
+//     padding: 12px;
+//     border: none;
+//     background-color: chartreuse;
+//     color: blue;
+//     font-size: medium;
+//     border-radius: 15px;
+//     cursor: pointer;
+//     margin-top: 50px;
+// }
+
+// .div{
+//     width: 500px;
+//     height: 500px;
+//     border-left: 25px solid transparent;
+// 	border-right: 25px solid transparent;
+// 	border-bottom: 50px solid #555;
+// }
+
+//------------------------------------------------------------------------------------------------------
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.btn{
-    padding: 15px;
-    background-color: rgb(14, 93, 93);
-    color: aliceblue;
+.overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.btn {
     cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
     border: none;
-    border-radius: 8px;
 }
